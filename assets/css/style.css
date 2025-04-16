@@ -26,6 +26,7 @@ body::before {
 }
 
 @media (min-width: 1024px) {
+
   body::before {
     background-attachment: fixed;
   }
@@ -88,7 +89,7 @@ h6,
 }
 
 #header h2 {
-  font-size: 17px;
+  font-size: 18px;
   margin-top: 17px;
   color: rgba(255, 255, 255, 0.8);
 }
@@ -110,7 +111,7 @@ h6,
 }
 
 #header .social-links a {
-  font-size: 16px;
+  font-size: 14px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -187,7 +188,7 @@ h6,
   }
 
   #header.header-top h1 {
-    font-size: 26px;
+    font-size: 186px;
   }
 }
 
@@ -199,7 +200,7 @@ h6,
 */
 .navbar {
   padding: 0;
-  margin-top: 35px;
+  margin-top: 15px;
 }
 
 .navbar ul {
@@ -283,10 +284,6 @@ h6,
 }
 
 @media (max-width: 991px) {
-  #tagi {
-    display: none;
-  }
-
   .mobile-nav-toggle {
     display: block;
   }
@@ -369,6 +366,10 @@ section .container {
 }
 
 @media (max-width: 768px) {
+  #block {
+    display: none;
+  }
+
   section {
     top: 120px;
   }
@@ -402,30 +403,15 @@ section .container {
 .section-title p {
   margin: 0;
   margin: -15px 0 15px 0;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
   color: #fff;
 }
 
-/*--------------------------------------------------------------
-# Circle
---------------------------------------------------------------*/
-header .container img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  overflow: hidden;
-  padding: 30px;
-}
-
-header .container img:hover {
-  transform: scale(1.1);
-  transition: 0.3s;
-}
-
-header .container img:active {
-  transform: scale(0.9);
-  transition: 0.3s;
+#avatar {
+  margin-top: 60px;
+  margin-left: 20px;
+  clip-path: circle();
 }
 
 /*--------------------------------------------------------------
@@ -453,7 +439,7 @@ header .container img:active {
 }
 
 .about-me .content ul i {
-  font-size: 16px;
+  font-size: 14px;
   margin-right: 5px;
   color: #ef6024;
   line-height: 0;
@@ -502,6 +488,9 @@ header .container img:active {
 /*--------------------------------------------------------------
 # Education
 --------------------------------------------------------------*/
+.education-item p {
+  font-weight: normal;
+}
 
 education .education-title {
   font-size: 26px;
@@ -598,54 +587,29 @@ education .education-title {
   color: #fff;
 }
 
-.resume .resume-item {
-  padding: 0 0 20px 20px;
-  margin-top: -2px;
-  border-left: 2px solid rgba(255, 255, 255, 0.2);
+.resume-item ul {
+  list-style: none;
+  padding-left: 1.5rem;
+}
+
+.resume-item ul li {
   position: relative;
+  padding-left: 1.2em;
+  margin-bottom: 0.6em;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: all 0.4s ease;
 }
 
-.resume .resume-item h4 {
-  line-height: 18px;
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: #ef6024;
-  margin-bottom: 10px;
-}
-
-.resume .resume-item h5 {
-  font-size: 16px;
-  background: rgba(255, 255, 255, 0.15);
-  padding: 5px 15px;
-  display: inline-block;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.resume .resume-item ul {
-  padding-left: 20px;
-}
-
-.resume .resume-item ul li {
-  padding-bottom: 10px;
-}
-
-.resume .resume-item:last-child {
-  padding-bottom: 0;
-}
-
-.resume .resume-item::before {
-  content: "";
+.resume-item ul li::before {
+  content: "⦿";
+  /* Unicode bullet – change to Font Awesome if you want */
   position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50px;
-  left: -9px;
-  top: 0;
-  background: #ef6024;
-  border: 2px solid #ef6024;
+  left: 0;
+  color: #00aaff;
+  font-size: 0.8em;
 }
+
 
 /*--------------------------------------------------------------
 # Contact
@@ -813,4 +777,30 @@ education .education-title {
   100% {
     transform: rotate(360deg);
   }
+}
+
+/*--------------------------------------------------------------
+# Blockquote
+--------------------------------------------------------------*/
+
+blockquote {
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C" "\201D" "\2018" "\2019";
+  font-style: italic;
+}
+
+blockquote:before {
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
+  font-weight: 400;
+  position: relative;
 }

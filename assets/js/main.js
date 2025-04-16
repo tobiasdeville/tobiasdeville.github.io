@@ -255,3 +255,7 @@
   }
   form.addEventListener("submit", handleSubmit);
 })();
+
+$('.resumer-item > li > strong').click(function () {
+  $(this).siblings('ul').slideToggle();
+});

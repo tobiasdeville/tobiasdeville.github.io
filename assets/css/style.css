@@ -121,12 +121,8 @@ h6,
   line-height: 1;
   margin-right: 8px;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
-}
-
-#header .social-links a:hover {
-  background: #ef6024;
+  width: 30px;
+  height: 20px;
 }
 
 @media (max-width: 992px) {
@@ -748,7 +744,7 @@ education .education-title {
 --------------------------------------------------------------*/
 
 blockquote {
-  max-width: 400px;
+  max-width: 600px;
   margin-left: 30px;
   border-left: 10px solid #ccc;
   margin: 1.5em 10px;

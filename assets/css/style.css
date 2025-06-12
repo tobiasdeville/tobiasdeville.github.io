@@ -26,7 +26,6 @@ body::before {
 }
 
 @media (min-width: 1024px) {
-
   body::before {
     background-attachment: fixed;
   }
@@ -214,7 +213,7 @@ h6,
   position: relative;
 }
 
-.navbar li+li {
+.navbar li + li {
   margin-left: 30px;
 }
 
@@ -253,7 +252,7 @@ h6,
 }
 
 .navbar a:hover:before,
-.navbar li:hover>a:before,
+.navbar li:hover > a:before,
 .navbar .active:before {
   visibility: visible;
   width: 25px;
@@ -262,7 +261,7 @@ h6,
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover>a {
+.navbar li:hover > a {
   color: #fff;
 }
 
@@ -327,7 +326,7 @@ h6,
   padding: 12px 20px;
 }
 
-.navbar-mobile li+li {
+.navbar-mobile li + li {
   margin: 0;
 }
 
@@ -364,7 +363,6 @@ section .container {
 }
 
 @media (max-width: 768px) {
-
   section {
     top: 120px;
   }
@@ -403,10 +401,26 @@ section .container {
   color: #fff;
 }
 
+header .socxial-links img {
+  height: 50px;
+  width: 50px;
+  clip-path: circle();
+}
+
 #avatar {
   margin-top: 60px;
   margin-left: 20px;
   clip-path: circle();
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  background-position: 50%;
+  background-image: url("../img/avatar.png");
+  background-size: contain;
+  border-radius: 100px;
+  border: 4px solid #fff;
 }
 
 /*--------------------------------------------------------------
@@ -424,6 +438,7 @@ section .container {
 }
 
 .about-me .content ul li {
+  height: 20px;
   margin-bottom: 20px;
   display: flex;
   align-items: center;
@@ -637,7 +652,7 @@ education .education-title {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br+br {
+.contact .php-email-form .error-message br + br {
   margin-top: 25px;
 }
 
@@ -749,7 +764,7 @@ blockquote {
   border-left: 10px solid #ccc;
   margin: 1.5em 10px;
   padding: 0.5em 10px;
-  quotes: "\201C" "\201D" "\2018" "\2019";
+  quotes: "\201C""\201D""\2018""\2019";
   font-style: italic;
 }
 

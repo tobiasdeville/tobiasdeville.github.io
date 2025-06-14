@@ -41,7 +41,10 @@ a:hover {
   text-decoration: none;
 }
 
-h1,
+h1 {
+  font-family: "Anton", sans-serif;
+  font-optical-sizing: auto;
+}
 h2,
 h3,
 h4,
@@ -49,7 +52,7 @@ h5,
 h6,
 .section-title p {
   font-family: "Actor", sans-serif;
-  /* font-optical-sizing: auto; */
+  font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;
 }
@@ -65,7 +68,7 @@ h6,
   align-items: center;
   z-index: 997;
   overflow-y: auto;
-  font-family: "Actor", sans-serif;
+  /* font-family: "Actor", sans-serif; */
 }
 
 #header * {
@@ -73,7 +76,7 @@ h6,
 }
 
 #header h1 {
-  font-size: 28px;
+  font-size: 36px;
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -110,7 +113,7 @@ h6,
 }
 
 #header .social-links a {
-  font-size: 14px;
+  font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -206,7 +209,7 @@ h6,
   display: flex;
   list-style: none;
   align-items: center;
-  font-family: "Actor", sans-serif;
+  /* font-family: "Actor", sans-serif; */
 }
 
 .navbar li {
@@ -223,7 +226,7 @@ h6,
   align-items: center;
   justify-content: space-between;
   padding: 0;
-  font-family: "Actor", sans-serif;
+  /* font-family: "Actor", sans-serif; */
   font-size: 14px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
@@ -381,7 +384,7 @@ section .container {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #aaaaaa;
-  font-family: "Actor", sans-serif;
+  /* font-family: "Actor", sans-serif; */
 }
 
 .section-title h2::after {
@@ -407,20 +410,19 @@ header .socxial-links img {
   clip-path: circle();
 }
 
-#avatar {
-  margin-top: 60px;
-  margin-left: 20px;
+/* #avatar {
+  margin: 20px;
+  border: 2px solid #fff;
   clip-path: circle();
-}
+} */
 
-.avatar {
-  width: 100px;
-  height: 100px;
-  background-position: 50%;
-  background-image: url("../img/avatar.png");
-  background-size: contain;
-  border-radius: 100px;
-  border: 4px solid #fff;
+#avatar {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  clip-path: circle();
+  border-radius: 200px;
+  border: 6px solid #fff;
 }
 
 /*--------------------------------------------------------------
@@ -475,7 +477,6 @@ header .socxial-links img {
   text-transform: uppercase;
   display: block;
   font-weight: 600;
-  font-family: "Actor", sans-serif;
   color: #fff;
 }
 

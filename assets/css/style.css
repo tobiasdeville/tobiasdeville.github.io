@@ -410,11 +410,9 @@ header .socxial-links img {
   clip-path: circle();
 }
 
-/* #avatar {
-  margin: 20px;
-  border: 2px solid #fff;
-  clip-path: circle();
-} */
+.right {
+  float: right;
+}
 
 #avatar {
   width: 200px;
@@ -431,7 +429,6 @@ header .socxial-links img {
 .about-me .content h4 {
   font-weight: 700;
   font-size: 18px;
-  color: #ef6024;
 }
 
 .about-me .content ul {
@@ -469,6 +466,7 @@ header .socxial-links img {
   display: block;
   background: none;
   border-radius: 0;
+  margin-bottom: 20px;
 }
 
 .skills .progress .skill {
@@ -487,13 +485,25 @@ header .socxial-links img {
 
 .skills .progress-bar-wrap {
   background: rgba(255, 255, 255, 0.2);
+  height: 10px;
+  border-radius: 0;
 }
 
 .skills .progress-bar {
-  width: 1px;
   height: 10px;
   transition: 0.9s;
   background-color: #ef6024;
+  border-radius: 0;
+  /* Remove the width: 1px; and let it be set by JavaScript */
+}
+
+.skills .skills-content .col-lg-8 {
+  margin-left: auto;
+}
+
+.skills .skills-content {
+  display: flex;
+  justify-content: flex-end;
 }
 
 /*--------------------------------------------------------------

@@ -427,6 +427,7 @@ header .socxial-links img {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+
 .about-me .content h4 {
   font-weight: 700;
   font-size: 18px;
@@ -509,9 +510,6 @@ header .socxial-links img {
 /*--------------------------------------------------------------
 # Education
 --------------------------------------------------------------*/
-.education-item p {
-  font-weight: normal;
-}
 
 education .education-title {
   font-size: 26px;
@@ -537,7 +535,7 @@ education .education-title {
 }
 
 .education .education-item h5 {
-  font-size: 16px;
+  font-size: 12px;
   background: rgba(255, 255, 255, 0.15);
   padding: 5px 15px;
   display: inline-block;

@@ -68,7 +68,7 @@ h6,
   align-items: center;
   z-index: 997;
   overflow-y: auto;
-  /* font-family: "Actor", sans-serif; */
+  padding-left: 20px;
 }
 
 #header * {
@@ -76,7 +76,7 @@ h6,
 }
 
 #header h1 {
-  font-size: 36px;
+  font-size: 42px;
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -113,18 +113,19 @@ h6,
 }
 
 #header .social-links a {
-  font-size: 20px;
+  color: #fff;
+  font-size: 28px;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background: rgba(255, 255, 255, 0.1); */
-  border: 1pmx solid rgb(255, 255, 255);
-  color: #fff;
   line-height: 1;
-  margin-right: 8px;
-  border-radius: 50%;
-  width: 30px;
-  height: 20px;
+  margin-right: 20px;
+  width: 28px;
+  height: 28px;
+}
+
+#header .social-links a:hover {
+  color: #ef6024;
 }
 
 @media (max-width: 992px) {
@@ -494,7 +495,6 @@ header .socxial-links img {
   transition: 0.9s;
   background-color: #ef6024;
   border-radius: 0;
-  /* Remove the width: 1px; and let it be set by JavaScript */
 }
 
 .skills .skills-content .col-lg-8 {
@@ -533,7 +533,6 @@ education .education-title {
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
-  color: #ef6024;
   margin-bottom: 10px;
 }
 
